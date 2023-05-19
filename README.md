@@ -1,18 +1,24 @@
-# Salesforce DX Project: Next Steps
+# sf-stripe
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+[Demo](https://github.com/effordDev/sf-node-stripe/assets/36901822/04e024cb-cf3e-4538-9b93-aabfef469398)
 
-## How Do You Plan to Deploy Your Changes?
+Provides a jump start to implementing [Stripe](https://stripe.com/docs/api) into salesforce. Contains ```Strip__mdt``` object to store keys and configuration. An apex class ```Stripe.cls``` to make a callout to the node server and a Lightning Web Component ```stripe.lwc```that initates the callout to the Apex class.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+##Getting Started
 
-## Configure Your Salesforce DX Project
+For the Node.js side [click here](https://github.com/effordDev/sf-node-stripe)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### Metadata
 
-## Read All About It
+ENCRYPTION_KEY__c, IV__c should be 128 bits I used [allkeysgenerator](https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx)
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+these should match what is stored as environment variables on the server.
+
+Secret__c - plain string that will be hashed sha256 - hex
+
+Create a ```Stripe__mdt``` record named 'Stripe' and populate the fields: 
+
+ENCRYPTION_KEY__c
+Initilization Vector - IV__c
+Node server - Proxy_URL__c
+Secret__c
