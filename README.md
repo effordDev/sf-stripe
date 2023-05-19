@@ -1,6 +1,7 @@
 # sf-stripe
 
-[Demo](https://github.com/effordDev/sf-node-stripe/assets/36901822/04e024cb-cf3e-4538-9b93-aabfef469398)
+[screen-recorder-fri-may-19-2023-13-22-33.webm](https://github.com/effordDev/sf-stripe/assets/36901822/c415a093-2a3d-4089-abca-921a31453ef4)
+
 
 Provides a jump start to implementing [Stripe](https://stripe.com/docs/api) into salesforce. Contains ```Strip__mdt``` object to store keys and configuration. An apex class ```Stripe.cls``` to make a callout to the node server and a Lightning Web Component ```stripe.lwc```that initates the callout to the Apex class.
 
