@@ -25,4 +25,4 @@ Node server - Proxy_URL__c
 Secret__c
 
 ---
-Written with my cat🐱‍👤 [tokyo](www.tokyotech.us)
+Written with my cat🐱‍👤 [tokyo](https://www.tokyotech.us)
