@@ -22,3 +22,6 @@ ENCRYPTION_KEY__c
 Initilization Vector - IV__c
 Node server - Proxy_URL__c
 Secret__c
+
+---
+Written with my cat🐱‍👤 [tokyo](www.tokyotech.us)
