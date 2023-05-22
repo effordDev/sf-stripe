@@ -1,5 +1,10 @@
 # sf-stripe
 
+<a href="https://githubsfdeploy.herokuapp.com?owner=effordDev&repo=sf-stripe">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
 [screen-recorder-fri-may-19-2023-13-22-33.webm](https://github.com/effordDev/sf-stripe/assets/36901822/c415a093-2a3d-4089-abca-921a31453ef4)
 
 
